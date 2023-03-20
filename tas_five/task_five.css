@@ -1,0 +1,115 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.text {
+    margin: 0 0 20px 0;
+    font-size: 25px;
+    text-align: center;
+}
+.pole {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 670px;
+}
+.inp_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 670px;
+}
+.inp_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 670px;
+}
+label[for="one"]{
+    font-size: 25px;
+    display: block;
+}
+label[for="two"]{
+    font-size: 25px;
+}
+.input {
+    border: 2px solid rgb(111, 0, 255);
+    font-size: 25px;
+    border-radius: 15px;
+    padding-left: 20px;
+    width: 450px;
+    height: 45px;
+    display: block;
+}
+.knopka {
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 30px 15px 0 15px;
+    background-color: darkgray;
+    text-transform: uppercase;
+    width: 300px;;
+}
+.result {
+    padding-top: 30px;
+    max-width: 590px;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    max-width: 200px;
+    margin: 20px;
+  }
+  .card-image {
+    display: block;
+    max-width: 200px;
+    max-height: 150px;
+  }
